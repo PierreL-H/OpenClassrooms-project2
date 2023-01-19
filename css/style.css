@@ -186,12 +186,17 @@ button.search-button:hover {
     margin-left: 0.6875rem;
 }
 
+figure {
+    margin: 0;
+}
+
 .lodging-card {
     padding: 5px;
     border-radius: 20px;
     background-color: #ffffff;
-    width: 246px;
-    height: 199px;
+    width: 30%;
+    /* height: 199px; */
+    height: 12.5rem;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
@@ -244,7 +249,8 @@ i.grey {
 
 .featured-card {
     box-sizing: border-box;
-    width: 343px;
+    /* width: 343px; */
+    width: calc(100%-80px);
     height: 144px;
     display: flex;
     gap: 20px;
@@ -264,4 +270,69 @@ i.grey {
     margin: 10px 17px 10px 0;
     padding: 0;
     justify-content: space-between;
+}
+
+.offers {
+    display: flex;
+    flex-direction: row;
+    gap: 3%;
+    margin-top: 40px;
+}
+
+.offers h2 {
+    margin: 0;
+    font-size: 1.375rem;
+}
+
+.lodging-container {
+    box-sizing: border-box;
+    width: 66%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.lodging-container > p {
+    margin-top: 20px;
+    margin-bottom: 0px;
+    font-size: 1.3125rem;
+    font-weight: 700;
+}
+
+.featured-container {
+    box-sizing: border-box;
+    width: 31%;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.lodging-card-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    row-gap: 30px;
+}
+
+.featured-container-heading {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.featured-card-container {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
 }
