@@ -273,6 +273,12 @@ i.grey {
     justify-content: space-between;
 }
 
+.featured-card .text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
 .offers {
     display: flex;
     flex-direction: row;
