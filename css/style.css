@@ -225,6 +225,7 @@ figcaption {
 figcaption h3,
 figcaption p {
     margin: 0;
+    color: black;
 }
 
 figcaption h3 {
@@ -335,4 +336,8 @@ i.grey {
     flex-direction: column;
     justify-content: space-between;
 
+}
+
+.offers a {
+    display: contents;
 }
