@@ -186,17 +186,14 @@ button.search-button:hover {
 }
 
 figure {
+    box-sizing: border-box;
+    height: 100%;
+    width: 100%;
     margin: 0;
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
     background-color: #ffffff;
     border-radius: 20px;
     padding: 5px;
-}
-
-.lodging-card {
-    width: 30%;
-    /* height: 199px; */
-    height: 12.5rem;
 }
 
 figure img {
@@ -248,10 +245,6 @@ i.grey {
 }
 
 .featured-card {
-    box-sizing: border-box;
-    /* width: 343px; */
-    width: 100%;
-    height: 144px;
     display: flex;
     gap: 15px;
 }
@@ -308,6 +301,19 @@ i.grey {
     font-weight: 700;
 }
 
+.card-container > * {
+    flex: 1 1 0px;
+}
+
+.lodging-card-container > * {
+    height: 12.5rem;
+    flex-basis: 30%;
+}
+
+.featured-card-container > * {
+    height: 0;
+}
+
 .featured-container {
     box-sizing: border-box;
     width: 31%;
@@ -324,6 +330,7 @@ i.grey {
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
+    gap: 30px;
     row-gap: 30px;
 }
 
@@ -339,18 +346,18 @@ i.grey {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-
+    gap: 30px;
 }
 
 a.card-link {
-    display: contents;           
+    text-decoration: none;
 }
 
 .activities {
     margin-top: 40px;
 }
 
-.activity-container {
+.activity-card-container {
     display:flex;
     flex-direction: row;
     justify-content: space-between;
@@ -358,24 +365,20 @@ a.card-link {
     gap: 40px;
 }
 
-.activity-container > * > *{
-    flex: 1 1 0;
-}
-
-.activity {
+.activity-card {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     padding: 0;
 }
 
-.activity-container img {
+.activity-card img {
     border-radius: 20px 20px 0 0;
     height: 390px;
     width: 100%;
 }
 
-.activity-container h3 {
+.activity-card h3 {
     padding: 20px;
 }
 
@@ -394,6 +397,7 @@ footer > * {
     flex-direction: column;
     gap: 10px;
 }
+
 footer a {
     text-decoration: none;
     color: black;
