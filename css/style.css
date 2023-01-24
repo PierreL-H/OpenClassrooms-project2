@@ -79,7 +79,7 @@ form.search-bar {
     justify-content: center;
 }
 
-#search-input { 
+.search-bar input { 
     border: 1px solid #F2F2F2;
     border-right: none;
     border-left: none;
@@ -92,7 +92,7 @@ form.search-bar {
     font-weight: 700;
 }
 
-#search-input:focus {
+.search-bar input:focus {
     outline: 2px solid #0065FC;
 }
 
@@ -170,8 +170,8 @@ button.search-button {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 1.5rem;
     height: 1.5rem;
+    aspect-ratio: 1 / 1;
 }
 
 .information p {
@@ -399,4 +399,112 @@ footer a {
 footer h3 {
     margin-top: 0;
     margin-bottom: 10px;
+}
+
+/* media query for screens between 768px and 992px */
+@media only screen and (min-width: 768px) and (max-width: 991px){
+
+}
+
+
+/* media query for devices under 768px */
+@media only screen and (max-width: 767px) {
+    * {
+        outline: 1px solid limegreen !important;
+    }
+
+    body {
+        width: 100%;
+        padding: 0;
+    }
+    header {
+        flex-direction: column;
+    }
+
+    header > img {
+        margin: 20px 0;
+    }
+
+    nav,
+    nav ul,
+    nav a {
+        width: 100%;
+    }
+
+    nav ul > * {
+        flex: 1 1 0;
+    }
+
+    nav a {
+        text-align: center;
+        padding: 20px 0;
+        border-bottom: 3px solid #F2F2F2;
+    }
+
+    nav a:hover {
+        border-top: initial;
+        padding-top: 20px;
+        border-color: #0065FC;
+    }
+
+    .search-section {
+        padding: 0 20px;
+    }
+    .search-section h2 {
+        margin-top: 30px;
+    }
+
+    form.search-bar {
+        margin-top: 36px;
+        width: 100%;
+    }
+
+    .search-button i {
+        display: initial;
+        color: white;
+    }
+    
+    .search-button span {
+        display: none;
+    }
+
+    .search-bar input {
+        width: initial;
+        flex-grow: 1;
+    }
+
+    .filters {
+        margin-top: 34px;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 15px;
+    }
+
+    .filters h2 {
+        margin-top: 0;
+    }
+
+    .filter-container {
+        gap: 14px;
+        row-gap: 17px;
+    }
+
+    .filter-container button {
+        padding: 0 12px;
+        flex: 1 1 0;
+    }
+
+    .filter-container span {
+        font-size: .6875em;
+    }
+
+    .information {
+        /* align-items: flex-start; */
+        gap: 10px;
+    }
+
+    .information p { 
+        margin: 0;
+    }
+
 }
