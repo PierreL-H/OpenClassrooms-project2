@@ -133,6 +133,7 @@ button.search-button {
 }
 
 .filter-container button {
+    height: 50px;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -154,8 +155,6 @@ button.search-button {
 .filter-container span {
     font-weight: 700;
     font-size: 1.0625rem;
-    margin-top: 14px;
-    margin-bottom: 14px;
 }
 
 .information {
@@ -404,7 +403,67 @@ footer h3 {
 
 /* media query for screens between 768px and 992px */
 @media only screen and (min-width: 768px) and (max-width: 991px){
+    /* * {
+        outline: 1px solid limegreen !important;
+    } */
 
+    body {
+        padding: 0 10px;
+    }
+
+    .filters h2 {
+        font-size: 1.0625rem;
+    }
+    .filters {
+        gap: 14px;
+    }
+
+    .filter-container {
+        gap: 14px;
+    }
+
+    .filter-container span {
+        font-size: 1rem;
+    }
+
+    .filter-container button {
+        padding: 0 8px;
+    }
+
+    .offers {
+        flex-direction: column;
+        gap: 50px;
+    }
+
+    .offers > * {
+        width: 100%;
+    }
+
+    .featured-card-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .featured-card-container > * {
+        height: 145px;
+    }
+
+    .activity-card {
+        height: 270px;
+    }
+
+    .activity-card figcaption {
+        flex-grow: 1;
+        padding: 0;
+        justify-content: center;
+    }
+    .activity-card > img {
+        height: 210px;
+    }
+
+    .activity-card h3 {
+        padding: 0 20px;
+    }
 }
 
 
