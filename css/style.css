@@ -412,7 +412,7 @@ footer h3 {
     } */
 
     body {
-        padding: 0 10px;
+        padding: 0 5%;
     }
 
     .filters h2 {
@@ -423,15 +423,15 @@ footer h3 {
     }
 
     .filter-container {
-        gap: 14px;
+        gap: 12px;
     }
 
     .filter-container span {
-        font-size: 1rem;
+        font-size: .875rem;
     }
 
     .filter-container button {
-        padding: 0 8px;
+        padding: 0 12px;
     }
 
     .offers {
@@ -467,6 +467,11 @@ footer h3 {
 
     .activity-card h3 {
         padding: 0 20px;
+    }
+
+    footer { 
+        padding: 40px 5%;
+        gap: 10px;
     }
 }
 
