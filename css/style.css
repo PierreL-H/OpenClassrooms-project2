@@ -65,6 +65,7 @@ form.search-bar {
 }
 
 .search-icon-container {
+    flex-shrink: 0;
     width: 3.125rem;
     height: 100%;
     line-height: 50px;
@@ -80,6 +81,7 @@ form.search-bar {
 }
 
 .search-bar input { 
+    /* flex-shrink: 1; */
     border: 1px solid #F2F2F2;
     border-right: none;
     border-left: none;
@@ -136,6 +138,7 @@ button.search-button {
     height: 50px;
     display: flex;
     align-items: center;
+    justify-content: flex-start;
     gap: 10px;
     padding-left: 20px;
     padding-right: 20px;
@@ -170,7 +173,8 @@ button.search-button {
     align-items: center;
     justify-content: center;
     height: 1.5rem;
-    aspect-ratio: 1 / 1;
+    width: 1.5rem;
+    flex-shrink: 0;
 }
 
 .information p {
@@ -530,7 +534,7 @@ footer h3 {
 
     .search-bar input {
         width: initial;
-        flex-grow: 1;
+        flex: 1 1 0;
     }
 
     .filters {
@@ -547,11 +551,12 @@ footer h3 {
     .filter-container {
         gap: 14px;
         row-gap: 17px;
+        width: 100%;
     }
 
     .filter-container button {
         padding: 0 12px;
-        flex: 1 1 0;
+        flex: 1 1 40%;
     }
 
     .filter-container span {
