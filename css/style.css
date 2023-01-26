@@ -455,29 +455,51 @@ footer h3 {
 
     .featured-card-container {
         flex-direction: row;
-        gap: 20px;
+        gap: 2.8%;
+    }
+
+    .lodging-card-container {
+        gap: 3.75%;
     }
 
     .lodging-card-container > * {
         min-width: initial;
+        height: initial;
+        aspect-ratio: 1.236;
     }
+
     .featured-card-container > * {
-        height: 145px;
+        aspect-ratio: 1.55;
+        height: initial;
+    }
+
+    .featured-card-container h3 {
+        font-size: 14px;
+    }
+
+    .featured-card-container p {
+        font-size: 13px;
+    }
+
+    .activity-card-container > * {
     }
 
     .activity-card {
-        height: 270px;
+        max-height: 270px;
+        height: initial;
+        aspect-ratio: 0.68;
     }
 
     .activity-card figcaption {
         padding: 0;
     }
     .activity-card > img {
-        height: 210px;
+        height: 80%;
     }
 
     .activity-card h3 {
-        padding: 0 20px;
+        padding: 0 15px;
+        font-size: .9375rem;
     }
 
     footer { 
