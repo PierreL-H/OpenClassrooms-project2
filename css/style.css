@@ -481,9 +481,6 @@ footer h3 {
         font-size: 13px;
     }
 
-    .activity-card-container > * {
-    }
-
     .activity-card {
         max-height: 270px;
         height: initial;
