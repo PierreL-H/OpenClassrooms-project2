@@ -549,6 +549,27 @@ footer h3 {
         border-color: #0065FC;
     }
 
+    .search-section,
+    .lodging-container,
+    .activities,
+    footer > * {
+        width: 100%;
+        box-sizing: border-box;
+        max-width: 500px;
+        margin: auto;
+    }
+    
+    footer > * {
+        padding-left: 20px;
+    }
+
+    .featured-container > * {
+        max-width: 460px;
+        margin: auto;
+    }
+    .featured-container-heading {
+        width: 100%;
+    }
     .search-section {
         padding: 0 20px;
     }
@@ -616,12 +637,12 @@ footer h3 {
 
     .featured-container {
         border-radius: initial;
-        padding: 40px 20px;
         order: -1;
         width: 100%;
         min-width: initial;
+        padding: 40px 20px;
     }
-    
+
     .card-container {
         flex-direction: column;
     }
@@ -668,7 +689,7 @@ footer h3 {
     }
 
     footer {
-        padding: 45px 30px;
+        padding: 45px 0;
         flex-direction: column;
         gap: 40px;
     }
