@@ -477,11 +477,11 @@ footer h3 {
     }
 
     .featured-card-container h3 {
-        font-size: 14px;
+        font-size: .875rem;
     }
 
     .featured-card-container p {
-        font-size: 13px;
+        font-size: .8125rem;
     }
 
     .activity-card-container {
@@ -489,8 +489,6 @@ footer h3 {
     }
 
     .activity-card {
-        max-height: 270px;
-        height: initial;
         aspect-ratio: 0.68;
     }
 
