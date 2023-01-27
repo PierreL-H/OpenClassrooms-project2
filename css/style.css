@@ -363,7 +363,7 @@ a.card-link {
 }
 
 .activity-card {
-    height: 445px;
+    aspect-ratio: 0.679;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -372,7 +372,7 @@ a.card-link {
 
 .activity-card img {
     border-radius: 20px 20px 0 0;
-    height: 390px;
+    height: 87%;
     width: 100%;
 }
 
@@ -679,6 +679,7 @@ footer h3 {
 
     .activity-card {
         height: 190px;
+        aspect-ratio: initial;
     }
     .activity-card > img {
         height: 135px;
