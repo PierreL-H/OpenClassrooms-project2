@@ -171,8 +171,9 @@ button.search-button {
 
 .information {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     font-size: 1rem;
+    gap: 10px;
 }
 
 .info-icon-container {
@@ -186,8 +187,12 @@ button.search-button {
     flex-shrink: 0;
 }
 
+.info-icon-container i {
+    margin-top: -2px;
+}
+
 .information p {
-    margin-left: 0.6875rem;
+    margin: 4px 0 0 0;
 }
 
 figure {
@@ -622,15 +627,6 @@ footer h3 {
 
     .filter-container span {
         font-size: .6875em;
-    }
-
-    .information {
-        /* align-items: flex-start; */
-        gap: 10px;
-    }
-
-    .information p { 
-        margin: 0;
     }
 
     .offers {
