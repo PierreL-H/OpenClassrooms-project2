@@ -163,7 +163,7 @@ button.search-button {
     color: #0065FC;
 }
 
-.filter-container span {
+.filter-text {
     text-align: start;
     font-weight: 700;
     font-size: 1.0625rem;
@@ -378,7 +378,7 @@ a.card-link {
 }
 
 .activity-card {
-    aspect-ratio: 0.679;
+    aspect-ratio: 0.679 / 1;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -449,7 +449,7 @@ footer h3 {
         gap: 12px;
     }
 
-    .filter-container span {
+    .filter-text {
         font-size: .875rem;
     }
 
@@ -474,11 +474,11 @@ footer h3 {
     .lodging-card-container > * {
         min-width: initial;
         height: initial;
-        aspect-ratio: 1.236;
+        aspect-ratio: 1.236 / 1;
     }
 
     .featured-card-container > * {
-        aspect-ratio: 1.55;
+        aspect-ratio: 1.55 / 1;
         height: initial;
     }
 
@@ -495,7 +495,7 @@ footer h3 {
     }
 
     .activity-card {
-        aspect-ratio: 0.68;
+        aspect-ratio: 0.68 / 1;
     }
 
     .activity-card figcaption {
@@ -626,7 +626,7 @@ footer h3 {
         flex: 1 1 40%;
     }
 
-    .filter-container span {
+    .filter-text {
         font-size: .6875em;
     }
 
