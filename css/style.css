@@ -1,5 +1,5 @@
 body {
-    max-width: 1340px;
+    max-width: 1400px;
     padding: 0 30px;
     margin: auto;
     font-family: 'Raleway';
@@ -429,7 +429,7 @@ footer h3 {
 }
 
 /* media query for screens between 768px and 992px */
-@media only screen and (min-width: 768px) and (max-width: 991px){
+@media only screen and (min-width: 768px) and (max-width: 992px){
     /* * {
         outline: 1px solid limegreen !important;
     } */
